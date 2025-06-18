@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Bienvenido a AI ACADEMY, idea innovadora"
+    return "Bienvenido a AI ACADEMY, idea innovadora, probando desde otro dispositivo"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
