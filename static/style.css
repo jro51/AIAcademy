@@ -183,11 +183,13 @@ footer {
   color: var(--azul-pastel);
 }
  
+ 
 .imagen-superpuesta {
   position: absolute;
-  top: 200px;
-  right: 590px;
-  width: 120px;
+  top: 257px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125px;
   opacity: 0.95;
   pointer-events: none;
   z-index: 1;
