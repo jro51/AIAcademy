@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>IA ACADEMY</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IA-Academy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
-    <h1>¡Bienvenido a IA ACADEMY!</h1>
-    <p>Esta página está hecha con HTML y Flask.</p>
+
+  <nav class="navbar">
+    <div class="logo">🚀 IA‑Academy</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#faq">Preguntas & Respuestas</a></li>
+      <li><a href="#contacto">Contáctanos</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">
+        <img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Facebook" class="icono-social">
+      </a>
+      <a href="https://wa.me/5191267217" target="_blank">
+        <img src="{{ url_for('static', filename='img/WhatsApp.svg.webp') }}" alt="WhatsApp" class="icono-social">
+      </a>
+    </div>
+  </nav>
+
+  <header id="home">
+    <h1>Transforma tu aprendizaje con IA</h1>
+    <p>Apoyo académico inteligente, claro y personalizado</p>
+  </header>
+
+  <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="decoración" class="imagen-superpuesta">
+
+  <section class="section cards-section" id="servicios">
+    <div class="cards">
+      <div class="card">
+        <h2>¿Quiénes son nuestros usuarios?</h2>
+        <p>Estudiantes de pre y posgrado en países hispanohablantes. Buscan soluciones prácticas y eficientes.</p>
+      </div>
+      <div class="card">
+        <h2>Asesoría personalizada</h2>
+        <p>Nos adaptamos a tu nivel académico, carrera y estilo de aprendizaje. Guiamos paso a paso.</p>
+      </div>
+      <div class="card">
+        <h2>Desarrollo de habilidades</h2>
+        <p>Enseñamos a investigar, redactar y citar correctamente. Aprendes mientras avanzas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="description" id="faq">
+    <h2>¿Cómo trabajamos?</h2>
+    <p>Aplicamos tecnologías modernas, guías prácticas y un enfoque directo, eficiente y personalizado.</p>
+  </section>
+
+  <section class="recomendaciones">
+    <h3>Recomendaciones</h3>
+    <p>💡 Aprende paso a paso.<br>🧠 Piensa en problemas reales.<br>🚀 Aprende haciendo, sin miedo al error.</p>
+  </section>
+
+  <section class="social">
+    <a href="https://facebook.com" target="_blank">
+      <img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Facebook" class="icono-social">
+      Síguenos en Facebook
+    </a>
+
+    <a href="https://wa.me/5191267217" target="_blank">
+      <img src="{{ url_for('static', filename='img/WhatsApp.svg.webp') }}" alt="WhatsApp" class="icono-social">
+      Escríbenos por WhatsApp
+    </a>
+  </section>
+
+  <footer id="contacto">
+    &copy; 2025 IA-Academy. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
